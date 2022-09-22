@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import datos from "../../data/data.json";
+import TryCard from "../Ui/TryCard";
 import UserCardM from "../Ui/UserCardM";
-import CardM from "../Ui/CardM";
 
 const Desktop = () => {
   const work = datos.find((data) => data.title == "Work");
@@ -16,22 +16,22 @@ const Desktop = () => {
         <UserCardM />
       </Box>
       <Box>
-        <CardM cType="work" data={work} />
+        <TryCard cType="work" data={work} />
       </Box>
       <Box>
-        <CardM cType="play" data={play} />
+        <TryCard cType="play" data={play} />
       </Box>
       <Box>
-        <CardM cType="study" data={study} />
+        <TryCard cType="study" data={study} />
       </Box>
       <Box>
-        <CardM cType="exercise" data={excercise} />
+        <TryCard cType="exercise" data={excercise} />
       </Box>
       <Box>
-        <CardM cType="selfcare" data={selfcare} />
+        <TryCard cType="selfcare" data={selfcare} />
       </Box>
       <Box>
-        <CardM cType="social" data={social} />
+        <TryCard cType="social" data={social} />
       </Box>
     </>
   );
