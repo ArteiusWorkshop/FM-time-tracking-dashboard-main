@@ -1,0 +1,113 @@
+* {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+.MuiTypography-root {
+  font-family: "Rubik", sans-serif;
+}
+
+.MuiButtonBase-root {
+  text-transform: capitalize;
+  color: var(--desaturatedblue);
+  border: none;
+}
+
+body {
+  background-color: var(--verydarkblue);
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --work: hsl(15, 100%, 70%);
+  --play: hsl(195, 74%, 62%);
+  --study: hsl(348, 100%, 68%);
+  --exercise: hsl(145, 58%, 55%);
+  --social: hsl(264, 64%, 52%);
+  --selfcare: hsl(43, 84%, 65%);
+
+  --verydarkblue: hsl(226, 43%, 10%);
+  --darkblue: hsl(235, 46%, 20%);
+  --desaturatedblue: hsl(235, 45%, 61%);
+  --paleBlue: hsl(236, 100%, 87%);
+}
+
+@media only screen and (max-width: 425px) {
+  .work,
+  .play,
+  .study,
+  .exercise,
+  .social,
+  .selfcare {
+    height: 161px;
+    width: 327px;
+    background-size: 21%;
+  }
+} /*Mobile*/
+
+@media only screen and (min-width: 426px) {
+  .work,
+  .play,
+  .study,
+  .exercise,
+  .social,
+  .selfcare {
+    height: 244px;
+    width: 255px;
+    background-size: 31%;
+  }
+} /*sm*/
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.selfcare {
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: top -10px right 20px;
+}
+
+.work {
+  background-color: var(--work);
+  background-image: url("/img/icon-work.svg");
+}
+
+.play {
+  background-color: var(--play);
+  background-image: url("/img/icon-play.svg");
+}
+.study {
+  background-color: var(--study);
+  background-image: url("/img/icon-study.svg");
+}
+.exercise {
+  background-color: var(--exercise);
+  background-image: url("/img/icon-exercise.svg");
+}
+.social {
+  background-color: var(--social);
+  background-image: url("/img/icon-social.svg");
+}
+.selfcare {
+  background-color: var(--selfcare);
+  background-image: url("/img/icon-self-care.svg");
+}
+
+.data-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding-block: 4rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+  height: 100%;
+  align-items: center;
+}
+
+.main {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}

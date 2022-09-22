@@ -1,0 +1,30 @@
+.innerBox {
+  height: 122px;
+  background-color: var(--darkblue);
+  width: 327px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--paleBlue);
+}
+
+.footerBox {
+  height: 39px;
+}
+
+.leftBox {
+  text-align: left;
+}
+.rightBox {
+  text-align: right;
+}
+
+.ctype {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.current {
+  font-size: 32px;
+}
