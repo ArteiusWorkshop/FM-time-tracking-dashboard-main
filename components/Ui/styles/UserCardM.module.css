@@ -1,0 +1,31 @@
+.mainBox {
+  height: 520px;
+  background-color: var(--darkblue);
+}
+
+.innerBox {
+  display: flex;
+  flex-direction: column;
+  height: 354px;
+  text-align: left;
+  background-color: var(--blue);
+}
+
+.mainBox,
+.innerBox {
+  width: 285px;
+  border-radius: 15px;
+}
+
+.footerBox {
+  height: 166px;
+  color: var(--desaturatedblue);
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border: 4px solid white;
+}
