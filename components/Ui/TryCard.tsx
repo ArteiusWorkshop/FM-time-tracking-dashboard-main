@@ -30,7 +30,7 @@ const TryCard: FC<CardProps> = ({ cType, data }) => {
     <>
       <Box className={cType}>
         <Box className={styles.footerBox}></Box>
-        <a href="#">
+        
           <Box className={styles.innerBox}>
             <Box className={styles.leftBox}>
               <Box>
@@ -58,7 +58,7 @@ const TryCard: FC<CardProps> = ({ cType, data }) => {
               </Box>
             </Box>
           </Box>
-        </a>
+       
       </Box>
     </>
   );
